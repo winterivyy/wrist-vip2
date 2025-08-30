@@ -24,7 +24,7 @@ export default function Header() {
         <Link to="/" className="flex items-center space-x-3 group">
           <div className="relative">
             <img 
-              src=".././public/assets/logo.png" 
+              src="./assets/logo.png" 
               alt="Wrist VIP Logo" 
               className="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300"
             />
