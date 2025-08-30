@@ -73,16 +73,17 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] bg-white">
             <div className="flex flex-col space-y-6 mt-12">
-              <div className="flex items-center space-x-3 mb-8">
-                <img 
-                  src="/images/Logo.jpg" 
-                  alt="Wrist VIP Logo" 
-                  className="h-10 w-10 object-contain"
-                />
-                <span className="font-display text-2xl font-bold luxury-gradient">
-                  Wrist VIP
-                </span>
-              </div>
+               <Link to="/" className="flex items-center space-x-3 group">
+          <div className="relative">
+            <img 
+              src="./assets/logo.png" 
+              alt="Wrist VIP Logo" 
+              className="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 h-12 w-12 bg-amber-600/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300"></div>
+          </div>
+        
+        </Link>
               
               {navigation.map((item) => (
                 <Link
